@@ -36,3 +36,36 @@ int main()
     cout << "tu nombre completo" << nombreCompleto << endl;
 
 }
+
+
+
+
+
+// ConsoleApplication1.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+#include <limits>
+#include <iomanip>
+#include <locale>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    //Introducir un valor en una variable tipo string e imprimirlo 
+    string nombre;
+    cout << "dame un nombre : ";
+    cin >> nombre;
+    cout << "hola" << nombre << endl;
+    //Imprimir una linea completa tipo string 
+    cin.ignore();
+    string nombreCompleto;
+    getline(cin, nombreCompleto);
+    cout << "tu nombre completo" << nombreCompleto << endl;
+    //acceso a un caracter especifico 
+    cout << nombre[0] << endl;
+}
+
+

@@ -1,0 +1,38 @@
+// ConsoleApplication1.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+#include <limits>
+#include <iomanip>
+#include <locale>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    //manejo de punto decimal y separador
+    locale loc("");
+    cout.imbue(loc);
+    //declarar e imprimir una variable string
+    string texto0 = "hola mundo";
+    cout << texto0 << endl;
+    return 0;
+    //UNION DE DOSVARIABLES TIPO STRING
+    string tipoa = "hello";
+    string tipob = "world";
+    string saludo = tipoa + tipob;
+    cout << saludo << endl;
+
+    //Introducir un valor en una variable tipo string e imprimirlo 
+    string nombre;
+    cout << "dame un nombre : ";
+    cin >> nombre;
+    cout << "hola" << nombre << endl;
+    //Imprimir una linea completa tipo string 
+    cin.ignore();
+    string nombreCompleto;
+    getline(cin, nombreCompleto);
+    cout << "tu nombre completo" << nombreCompleto << endl;
+
+}

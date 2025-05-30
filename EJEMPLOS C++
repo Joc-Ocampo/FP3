@@ -68,4 +68,84 @@ int main()
     cout << nombre[0] << endl;
 }
 
+CLASE DEL 29/05/25
+// ConsoleApplication1.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	//Ejercicio 1 "Declaracion, captura e impresión de un número entero 
+	/*
+	int variableint;
+	cout << "Dame un numero entero : ";
+	cin >> variableint;
+	cout << "Valor de la variable Int: " << variableint << endl;
+	*/
+	//Ejercicio 2 "Declaracion, captura e impresion de un numero entero tipo long 
+	/*
+	long long celular = 525512345678L;
+	cout << " Numero de celular es : " << celular << endl;
+	string celularStr = "525512345678";
+	cout << "Tu numero de celular en string es : " << celularStr << endl;
+	*/
+	// Ejercicio 3  "Separador de numeros por comas , "
+	locale loc("");
+	cout.imbue(loc);
+	/*
+	long long d = 123456789012345;
+	// Imprimir el numero usando la configuracion regional establecida 
+	cout << d << endl;
+		*/
+	// Ejercicio 4 "Numeros sin signo
+	/*
+	unsigned int numeroUnsignedInt = -1;
+	cout << "numero positivo : " << numeroUnsignedInt << endl;
+	*/
+	// Ejercicio 5 "Declaracion captura e impresion de un numero entero tipo float
+	/*float numeroFloat = 3.1415926f;
+	cout << "Dame un numeroFloat : ";
+	cin >> numeroFloat;
+	cout << "numero pi float : " << numeroFloat << endl;*/
+	//Ejercicio 6 Declaracion captura e impresion de un numero entero tipo double
+	/*
+	double numeroDoble = 3.14159265358979; //no se pone una literal al final 
+	cout << "Dame un numeroDoble : ";
+	cin >> numeroDoble;
+	cout << "numero pi  doble : " << numeroDoble << endl;
+	*/
+	//Ejercicio 6 Declaracion captura e impresion de un numero entero tipo Booleano
+	/*
+	cout << boolalpha; //Es para que salga con letra el verdadero o falso 
+	bool esVerdadero = true;
+	cout << "El valor de esVerdadero es : " << esVerdadero << endl;
+	bool esFalso = false;
+	cout << "El valor de esFalso es : " << esFalso << endl;
+	*/
+	bool soleado = true;
+	bool lloviendo = false;
+	// Imprimir sin boolalpha
+	cout << "Sin boolalpha:" << endl;
+	cout << "es soleado? : " << soleado << endl;
+	cout << "esta lloviendo? : " << lloviendo << endl;
+	// Imprimir con boolalpha
+	cout << boolalpha;
+	// Activa boolalpha
+	cout << "Con boolalpha:" << endl;
+	cout << "es soleado? : " << soleado << endl;
+	cout << "esta lloviendo?: " << lloviendo << endl;
+
+	// Ejemplo de inferencia
+	bool hayCalor = true; // 1 es verdad
+	bool hayHumedad = true; // 1 es verdad
+	cout << boolalpha;
+	cout << "Calor ? " << hayCalor << endl;
+	cout << "Humedad ? " << hayHumedad
+		<< endl;
+	bool llueveDos = hayCalor and hayHumedad;
+	cout << "Llueve ? " << llueveDos << endl;
+
+	}
+
 
